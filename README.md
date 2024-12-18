@@ -6,4 +6,21 @@ C++ library files to implement non-blocking timers
 2. Or install the files in your library for the Arduino IDE.
    - Make a folder with name ```NonBlockingTimer``` in your Arduino libraries folder and add the .h and .cpp files to it. By default Documents\Arduino\libraries
    - Include in your sketch with ```#include <myPrint.h>```
+  
+# Create object
+Example: ```NonBlockingTimer MyFirstTimer(2000,'u',true);```
+
+| Parameter | Values                                                                                     |
+|-----------|--------------------------------------------------------------------------------------------|
+| duration  | integer                                                                                    |
+| Units     | String 's' for seconds or 'u' for microseconds. ('s' is used by default if not specified)  |
+| One-shot  | boolean true or false (false is used by default if not specified)                          |
+# Methods
+| Method           | Purpose
+|------------------|-----------------------------------------------|
+| .start()         | Start running                                 |
+| .isLapsed()      | Returns ```true``` if duration is lapsed      |
+| .reset()         | Restarts the duration                         |
+| .currentValue()  | Returns the lapsed duration time in µSeconds  |
+
 
