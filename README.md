@@ -16,11 +16,12 @@ Example: ```NonBlockingTimer MyFirstTimer(2000,'u',true);```
 | Units     | no       | 's'     | String 's' for seconds or 'u' for microseconds. ('s' is used by default if not specified)  |
 | One-shot  | no       | false   | boolean true or false (false is used by default if not specified)                          |
 # Methods
-| Method           | Purpose
-|------------------|-----------------------------------------------|
-| .start()         | Start running                                 |
-| .isLapsed()      | Returns ```true``` if duration is lapsed      |
-| .reset()         | Restarts the duration                         |
-| .currentValue()  | Returns the lapsed duration time in µSeconds  |
+| Method           | Type       |   Purpose                                                                                      |
+|------------------|-----------------------|------------------------------------------------------------------------------------------------|
+| .start()         | NA                    | Start running                                                                                  |
+| .isLapsed()      | Boolean               | Returns ```true``` if duration is lapsed                                                       |
+| .reset()         | NA                    | Restarts the duration                                                                          |
+| .currentValue()  | long int              | Returns the lapsed duration time in µSeconds                                                   |
+| .setDuration()   | int,(optional String) | Change the duration of a timer for example ```.setDuration(2000,'u')``` or ```.setDuration(2)```<br> If not specified default is 's'               | 
 
 
