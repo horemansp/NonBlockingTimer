@@ -10,11 +10,11 @@ C++ library files to implement non-blocking timers
 # Create object
 Example: ```NonBlockingTimer MyFirstTimer(2000,'u',true);```
 
-| Parameter | Required | Values                                                                                     |
-|-----------|----------|--------------------------------------------------------------------------------------------|
-| duration  | yes      | integer                                                                                    |
-| Units     | no       | String 's' for seconds or 'u' for microseconds. ('s' is used by default if not specified)  |
-| One-shot  | no       | boolean true or false (false is used by default if not specified)                          |
+| Parameter | Required | Default | Values                                                                                     |
+|-----------|----------|---------|--------------------------------------------------------------------------------------------|
+| duration  | yes      |         | integer                                                                                    |
+| Units     | no       | 's'     | String 's' for seconds or 'u' for microseconds. ('s' is used by default if not specified)  |
+| One-shot  | no       | false   | boolean true or false (false is used by default if not specified)                          |
 # Methods
 | Method           | Purpose
 |------------------|-----------------------------------------------|
