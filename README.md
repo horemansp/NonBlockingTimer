@@ -13,8 +13,8 @@ Example: ```NonBlockingTimer MyFirstTimer(2000,'u',true);```
 | Parameter | Required | Default | Values                                                                                     |
 |-----------|----------|---------|--------------------------------------------------------------------------------------------|
 | duration  | yes      |         | integer                                                                                    |
-| Units     | no       | 's'     | String 's' for seconds or 'u' for microseconds. ('s' is used by default if not specified)  |
-| One-shot  | no       | false   | boolean true or false (false is used by default if not specified)                          |
+| units     | no       | 's'     | String 's' for seconds or 'u' for microseconds. ('s' is used by default if not specified)  |
+| oneshot   | no       | false   | boolean true or false (false is used by default if not specified) <br>timer will lapse only one time if set to true  |
 # Methods
 | Method           | Type       |   Purpose                                                                                      |
 |------------------|-----------------------|------------------------------------------------------------------------------------------------|
